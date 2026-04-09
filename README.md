@@ -1,4 +1,4 @@
-# 🏭 Industrial IoT Predictive Maintenance System
+# Industrial IoT Predictive Maintenance System
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red)
@@ -6,7 +6,7 @@
 
 An integrated, end-to-end data pipeline that simulates an Industrial Internet of Things (IIoT) environment. This system combines **Data Warehousing**, **Machine Learning (Data Mining)**, and an **Interactive Dashboard** to predict machine failures before they happen (Predictive Maintenance).
 
-## 📖 What is this Project About?
+## What is this Project About?
 In modern manufacturing, machines (like turbines, pumps, and motors) are equipped with sensors that continuously monitor physical metrics (temperature, vibration, pressure).
 This project provides a full-stack simulation of such an environment:
 1. **Data Generation**: Simulates realistic sensor readings and systematically injects "failure patterns" (e.g., sudden heat and vibration spikes).
@@ -14,13 +14,13 @@ This project provides a full-stack simulation of such an environment:
 3. **Data Mining (ML)**: Uses unsupervised machine learning (K-Means Clustering) to identify the "health state" of machines and Association Rule Mining (Apriori) to discover hidden correlations between sensor readings.
 4. **Interactive Dashboard**: A Streamlit web application providing a real-time window into the warehouse, visualizing sensor trends and triggering predictive alerts.
 
-## 💡 Why Predictive Maintenance?
+## Why Predictive Maintenance?
 Traditional maintenance operates on a "fix it when it breaks" (reactive) or "fix it every X days" (preventative) schedule. **Predictive Maintenance** uses data to predict *when* a machine is likely to fail, allowing engineers to intervene exactly when needed. This:
 - Reduces costly downtime.
 - Minimizes unnecessary maintenance.
 - Increases the lifespan of expensive industrial equipment.
 
-## ⚙️ Key Features
+## Key Features
 * **ETL Pipeline & Star Schema**: Utilizes Fact and Dimension tables (`Fact_SensorReadings`, `Dim_Machine`) for optimized, scalable data querying.
 * **K-Means Clustering**: Automatically categorizes machine states into *Healthy*, *Warning*, and *Critical* based on scaled multi-dimensional sensor data.
 * **Apriori Algorithm (Market Basket Analysis)**: Discovers strong association rules (e.g., patterns leading to equipment failure or warnings).
